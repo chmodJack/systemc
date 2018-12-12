@@ -1,0 +1,13 @@
+LogicalGate:
+	LogicalGate.hpp三口逻辑门的抽象基类，包含两个输入，一个输出
+	And.hpp与门电路
+	Not.hpp非门电路
+	Or.hpp或门电路
+	Xor.hpp异或门电路
+	Xnor.hpp同或电路(可以由一个异或和一个非组合而成，也可以直接写出来)
+Adder:
+	HalfAdder.hpp用一个异或门和一个与门组合而成的半加器
+	FullAdder.hpp用两个半加器和一个或门组合而成的全加器
+	NBitsFullAdder.hpp直接用SystemC语法写逻辑的N位全加器,其实也可以用多个全加器串联形成多位加法器。
+	但写法相对来说比较繁琐，只是繁琐，并不难，只要基础元件写好了，组合的时候不过是连线而已。
+	这个N位加法器只是为了演示了SystemC语法规范支持在不同的抽象层级上对硬件进行描述。
